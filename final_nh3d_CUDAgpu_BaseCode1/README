@@ -1,0 +1,54 @@
+
+COMPILING
+---------
+
+Program: main.f90
+Executable: main
+Compile by running: `make`
+
+The various DEBUG flags in the makefile provide different levels of compile
+and run-time checking of the code. Ideally, they will be enabled during
+development and disabled for production runs. The flags are all for gfortran.
+
+
+OPTIONS
+-------
+
+All options meant to be set by the user are located in basic_mod.f90.
+
+
+RUNNING THE CODE
+----------------
+
+On a personal machine, the code can simply be run with `mpirun -np X main`.
+
+On Yellowstone, the code can be sumbitted to the job scheduler with `bsub < submit.bsub`.
+Before this can be done, an account must be added to the submit script!
+
+The code expects a directory 'data' in which to write output data files.
+The code will hang if this directory is not present. In output_mod, a
+call to execute_command_line could replace the manual step of creating the
+data directory... but this Fortran 2008 builtin is only supported by some
+compilers :-(
+
+
+BATCH SUBMISSIONS
+-----------------
+
+The Python script ManageRuns.py helps to organize several similar simulations.
+It uses a 'template' basic_mod.f90 file, and performs substitutions to create
+different run configurations.
+
+Each configuration will live in a separate directory, and the source code will
+be copied into that directory. Each run configuration is therefore independent.
+
+
+PLOTTING
+--------
+
+The executable `main' will dump psi data after it is run. The data can be
+visualized with the provided NCL or Python scripts.
+
+Note: Python scripts require python libs: numpy, scipy, matplotlib
+
+

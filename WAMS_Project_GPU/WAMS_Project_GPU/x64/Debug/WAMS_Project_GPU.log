@@ -1,0 +1,38 @@
+﻿Build started 6/9/2015 11:57:11 AM.
+     1>Project "C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU\WAMS_Project_GPU.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\pkommera.UWYO\AppData\Local\Temp\tmp72e6887373dc4a84a558ca6c89a6459b.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\TS_GPU_Logic_Implementation.cu.obj "C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU\TS_GPU_Logic_Implementation.cu" -clean
+         
+         C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\TS_GPU_Logic_Implementation.cu.obj "C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU\TS_GPU_Logic_Implementation.cu" -clean 
+         TS_GPU_Logic_Implementation.cu
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_LIB /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU\TS_GPU_Logic_Implementation.cu" 
+       CudaBuild:
+         Compiling CUDA source file TS_GPU_Logic_Implementation.cu...
+         cmd.exe /C "C:\Users\pkommera.UWYO\AppData\Local\Temp\tmp025cd44a9ff44205913ca943127dcae5.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\TS_GPU_Logic_Implementation.cu.obj "C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU\TS_GPU_Logic_Implementation.cu"
+         
+         C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\TS_GPU_Logic_Implementation.cu.obj "C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU\TS_GPU_Logic_Implementation.cu" 
+         TS_GPU_Logic_Implementation.cu
+     1>C:/Pranay-Reddy Kommera/WAMS_Project_GPU/WAMS_Project_GPU/TS_GPU_Logic_Implementation.cu(58): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Pranay-Reddy Kommera/WAMS_Project_GPU/WAMS_Project_GPU/TS_GPU_Logic_Implementation.cu(92): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Pranay-Reddy Kommera/WAMS_Project_GPU/WAMS_Project_GPU/TS_GPU_Logic_Implementation.cu(223): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt TS_Client_GPU.cpp TS_DataExtraction_GPU.cpp
+         TS_DataExtraction_GPU.cpp
+         TS_Client_GPU.cpp
+     1>TS_Client_GPU.cpp(43): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>TS_Client_GPU.cpp(54): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Pranay-Reddy Kommera\WAMS_Project_GPU\x64\Debug\WAMS_Project_GPU.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64" cudart.lib pmdebug.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Pranay-Reddy Kommera\WAMS_Project_GPU\x64\Debug\WAMS_Project_GPU.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Pranay-Reddy Kommera\WAMS_Project_GPU\x64\Debug\WAMS_Project_GPU.lib" /MACHINE:X64 x64\Debug\TS_GPU_Logic_Implementation.cu.obj
+         x64\Debug\TS_Client_GPU.obj
+         x64\Debug\TS_DataExtraction_GPU.obj
+     1>pmdebug.lib(PM.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'pmdebug.lib(PM.obj)' or at 'C:\Pranay-Reddy Kommera\WAMS_Project_GPU\x64\Debug\vc120.pdb'; linking object as if no debug info
+         WAMS_Project_GPU.vcxproj -> C:\Pranay-Reddy Kommera\WAMS_Project_GPU\x64\Debug\WAMS_Project_GPU.exe
+     1>Done Building Project "C:\Pranay-Reddy Kommera\WAMS_Project_GPU\WAMS_Project_GPU\WAMS_Project_GPU.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.62

@@ -1,0 +1,23 @@
+# Makefile
+
+CC = nvcc
+
+LIB = -L/usr/local/cuda-9.0/lib64 -lcudart -lcusparse
+#INCLUDE = -I/usr/local/cuda-9.0/include
+
+H_FILES = BA_data.h BA_inludeFiles.h
+
+OBJS = BA_main.o BA_dataRW.o BA_functions.o BA_subFunctions.o BA_Math.o BA_cudaMath.o
+CFLAGS = -O3 -arch=sm_30 -std=c++11 -I/usr/local/cuda-9.0/include
+
+%.o : %.cpp $(H_FILES)
+	$(CC) -c -o $@ $< $(CFLAGS) $(LIB)
+
+%.o : %.cu $(H_FILES)
+	$(CC) -c -o $@ $< $(CFLAGS) $(LIB)
+
+out : $(OBJS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIB)
+
+clean:
+	rm -f $(OBJS) out

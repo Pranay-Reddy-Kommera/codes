@@ -1,0 +1,522 @@
++ source /cm/extra/apps/Modules/3.2.10/init/bash
+++ export -f module
+++ MODULESHOME=/cm/extra/apps/Modules/3.2.10
+++ export MODULESHOME
+++ '[' slurm/16.05.0:null:PrgEnv/PGI+OpenMPI/2017-02-10:cuda/8.0.44:pgi/17.1:hwloc/1.11.5:openmpi/1.10.5 = '' ']'
+++ '[' /cm/extra/PrgEnv/PGI+OpenMPI/2017-02-10:/cm/extra/apps/Modules/3.2.10/Modules/modulefiles:/cm/extra/eb/modules:/cm/extra/ModuleFiles/Latest:/cm/extra/ModuleFiles/Legacy:/cm/extra/Bundles:/cm/extra/PrgEnv/EZBuild/foss-2016a:/cm/extra/PrgEnv/EZBuild/foss-2016b:/cm/extra/PrgEnv/GCC+MPICH/2016-07-22:/cm/extra/PrgEnv/GCC+MVAPICH2/2016-10-26:/cm/extra/PrgEnv/GCC+OpenMPI/2016-04-16:/cm/extra/PrgEnv/GCC+OpenMPI/2016-06-24:/cm/extra/PrgEnv/GCC+OpenMPI/2016-09-01:/cm/extra/PrgEnv/GCC+OpenMPI/2016-10-12:/cm/extra/PrgEnv/GCC+OpenMPI/2016-12-08:/cm/extra/PrgEnv/GCC+OpenMPI/2017-03-20:/cm/extra/PrgEnv/Intel+IntelMPI/2017-03-02:/cm/extra/PrgEnv/Intel+MVAPICH2/2016-04-19:/cm/extra/PrgEnv/Intel+MVAPICH2/2016-10-26:/cm/extra/PrgEnv/Intel+OpenMPI/2016-03-21:/cm/extra/PrgEnv/Intel+OpenMPI/2016-08-03:/cm/extra/PrgEnv/Intel+OpenMPI/2017-02-16:/cm/extra/PrgEnv/PGI+MVAPICH2/2016-05-27:/cm/extra/PrgEnv/PGI+MVAPICH2/2017-07-27:/cm/extra/PrgEnv/PGI+OpenMPI/2016-11-14:/cm/extra/PrgEnv/PGI+OpenMPI/2017-03-18:/cm/extra/PrgEnv/PGI+OpenMPI/2017-04-26:/cm/extra/PrgEnv/PGI+OpenMPI/2017-05-24:/cm/extra/PrgEnv/PGI+OpenMPI/2017-06-07:/cm/extra/PrgEnv/XL+OpenMPI/2017-07-26 = '' ']'
+++ '[' 4 -ge 3 ']'
+++ '[' -r /cm/extra/apps/Modules/3.2.10/init/bash_completion ']'
+++ . /cm/extra/apps/Modules/3.2.10/init/bash_completion
++++ complete -o default -F _module module
++ module load null
+++ /cm/extra/apps/Modules/3.2.10/bin/modulecmd bash load null
++ eval
++ module load PrgEnv/PGI+OpenMPI/2017-05-24
+++ /cm/extra/apps/Modules/3.2.10/bin/modulecmd bash load PrgEnv/PGI+OpenMPI/2017-05-24
+PrgEnv/PGI+OpenMPI/2017-05-24(10):ERROR:150: Module 'PrgEnv/PGI+OpenMPI/2017-05-24' conflicts with the currently loaded module(s) 'PrgEnv/PGI+OpenMPI/2017-02-10'
+PrgEnv/PGI+OpenMPI/2017-05-24(10):ERROR:102: Tcl command execution failed: conflict PrgEnv
+
++ eval
++ module load openmpi
+++ /cm/extra/apps/Modules/3.2.10/bin/modulecmd bash load openmpi
++ eval LM_LICENSE_FILE=1787@sc-lic-25.nvidia.com:1787@sac-lic-26.nvidia.com ';export' 'LM_LICENSE_FILE;'
+++ LM_LICENSE_FILE=1787@sc-lic-25.nvidia.com:1787@sac-lic-26.nvidia.com
+++ export LM_LICENSE_FILE
++ export PGI_ACC_TIME=1
++ PGI_ACC_TIME=1
++ export PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/bin:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/bin:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/bin:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/bin:/cm/local/apps/cuda/libs/current/healthmon:/cm/local/apps/cuda/libs/current/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/bin:/cm/shared/apps/slurm/16.05.0/sbin:/cm/shared/apps/slurm/16.05.0/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/sbin:/usr/sbin:/cm/extra/apps/Modules/3.2.10/bin:/home/pkommera/bin
++ PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/bin:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/bin:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/bin:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/bin:/cm/local/apps/cuda/libs/current/healthmon:/cm/local/apps/cuda/libs/current/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/bin:/cm/shared/apps/slurm/16.05.0/sbin:/cm/shared/apps/slurm/16.05.0/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/sbin:/usr/sbin:/cm/extra/apps/Modules/3.2.10/bin:/home/pkommera/bin
++ export LD_LIBRARY_PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/lib:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/lib:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/lib:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/lib:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/extras/CUPTI/lib64:/cm/local/apps/cuda/libs/current/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64:/cm/shared/apps/slurm/16.05.0/lib64/slurm:/cm/shared/apps/slurm/16.05.0/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64/stubs
++ LD_LIBRARY_PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/lib:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/lib:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/lib:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/lib:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/extras/CUPTI/lib64:/cm/local/apps/cuda/libs/current/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64:/cm/shared/apps/slurm/16.05.0/lib64/slurm:/cm/shared/apps/slurm/16.05.0/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64/stubs
++ ulimit -c unlimited
++ ulimit -s unlimited
++ mpirun -n 1 ./main
+==> initialized MPI with number of procs = 1
+  HOMAM_Cart: Vital Statistics ------------------------- 
+      Fully 3D Euler DG (nodal) Solver
+  Name of the Test               : nh_igw              
+  Degree of the poly in DG-Space :             3
+  Number of Elements in (x,y,z)  :            64           32           16
+  Element width del(x,y,z) in (m):          5000         5000          625
+  Grid Aspect Ratio, (dx,dy)/dz  :             8            8
+  Global min grid-spacing in  (m):     208.0000000000000     
+  Time step in seconds         :   0.2000
+  -------------------------------------------------- 
+ Iteration,  Time:          300    60.00000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 300    simulation time = 60.00
+ Iteration,  Time:          600    120.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 600    simulation time = 120.00
+ Iteration,  Time:          900    180.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 900    simulation time = 180.00
+ Iteration,  Time:         1200    240.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 1200    simulation time = 240.00
+ Iteration,  Time:         1500    300.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 1500    simulation time = 300.00
+ Iteration,  Time:         1800    360.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 1800    simulation time = 360.00
+ Iteration,  Time:         2100    420.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 2100    simulation time = 420.00
+ Iteration,  Time:         2400    480.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 2400    simulation time = 480.00
+ Iteration,  Time:         2700    540.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 2700    simulation time = 540.00
+ Iteration,  Time:         3000    600.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3000    simulation time = 600.00
+ Iteration,  Time:         3300    660.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3300    simulation time = 660.00
+ Iteration,  Time:         3600    720.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3600    simulation time = 720.00
+ Iteration,  Time:         3900    780.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3900    simulation time = 780.00
+ Iteration,  Time:         4200    840.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 4200    simulation time = 840.00
+ Iteration,  Time:         4500    900.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 4500    simulation time = 900.00
+ Iteration,  Time:         4800    960.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 4800    simulation time = 960.00
+ Iteration,  Time:         5100    1020.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 5100    simulation time = 1020.00
+ Iteration,  Time:         5400    1080.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 5400    simulation time = 1080.00
+ Iteration,  Time:         5700    1140.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 5700    simulation time = 1140.00
+ Iteration,  Time:         6000    1200.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6000    simulation time = 1200.00
+ Iteration,  Time:         6300    1260.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6300    simulation time = 1260.00
+ Iteration,  Time:         6600    1320.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6600    simulation time = 1320.00
+ Iteration,  Time:         6900    1380.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6900    simulation time = 1380.00
+ Iteration,  Time:         7200    1440.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 7200    simulation time = 1440.00
+ Iteration,  Time:         7500    1500.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 7500    simulation time = 1500.00
+ Iteration,  Time:         7800    1560.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 7800    simulation time = 1560.00
+ Iteration,  Time:         8100    1620.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 8100    simulation time = 1620.00
+ Iteration,  Time:         8400    1680.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 8400    simulation time = 1680.00
+ Iteration,  Time:         8700    1740.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 8700    simulation time = 1740.00
+ Iteration,  Time:         9000    1800.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9000    simulation time = 1800.00
+ Iteration,  Time:         9300    1860.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9300    simulation time = 1860.00
+ Iteration,  Time:         9600    1920.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9600    simulation time = 1920.00
+ Iteration,  Time:         9900    1980.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9900    simulation time = 1980.00
+ Iteration,  Time:        10200    2040.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 10200    simulation time = 2040.00
+ Iteration,  Time:        10500    2100.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 10500    simulation time = 2100.00
+ Iteration,  Time:        10800    2160.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 10800    simulation time = 2160.00
+ Iteration,  Time:        11100    2220.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 11100    simulation time = 2220.00
+ Iteration,  Time:        11400    2280.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 11400    simulation time = 2280.00
+ Iteration,  Time:        11700    2340.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 11700    simulation time = 2340.00
+ Iteration,  Time:        12000    2400.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12000    simulation time = 2400.00
+ Iteration,  Time:        12300    2460.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12300    simulation time = 2460.00
+ Iteration,  Time:        12600    2520.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12600    simulation time = 2520.00
+ Iteration,  Time:        12900    2580.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12900    simulation time = 2580.00
+ Iteration,  Time:        13200    2640.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 13200    simulation time = 2640.00
+ Iteration,  Time:        13500    2700.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 13500    simulation time = 2700.00
+ Iteration,  Time:        13800    2760.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 13800    simulation time = 2760.00
+ Iteration,  Time:        14100    2820.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 14100    simulation time = 2820.00
+ Iteration,  Time:        14400    2880.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 14400    simulation time = 2880.00
+ Iteration,  Time:        14700    2940.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 14700    simulation time = 2940.00
+ Iteration,  Time:        15000    3000.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 15000    simulation time = 3000.00
+==> CPU time (in evolution loop) = 1290.8 sec
+ Global data min/max  -5.5910886358105927E-003   7.5572412603150951E-003
+ state_vec(2): rho*u error
+    14.81045812157947         15.42064576555163         23.22880371660900      
+  -2.8072117013949321E-009   3.0791136505321872E-003   1.2050700557072247E-002
+
+Accelerator Kernel Timing data
+(unknown)
+  (unknown)  NVIDIA  devicenum=0
+    time(us): 763
+    0: upload reached 150 times
+        0: data copyin transfers: 150
+             device time(us): total=763 max=20 min=3 avg=5
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/timestepper_mod.f90
+  ssp_rk3  NVIDIA  devicenum=0
+    time(us): 52,211,821
+    76: compute region reached 15000 times
+        76: kernel launched 15000 times
+            grid: [40960]  block: [16x16]
+             device time(us): total=14,249,410 max=954 min=946 avg=949
+            elapsed time(us): total=14,584,291 max=24,591 min=963 avg=972
+    121: compute region reached 15000 times
+        121: kernel launched 15000 times
+            grid: [40960]  block: [16x16]
+             device time(us): total=15,834,333 max=1,060 min=1,052 avg=1,055
+            elapsed time(us): total=16,138,939 max=1,314 min=1,069 avg=1,075
+    164: compute region reached 15000 times
+        164: kernel launched 15000 times
+            grid: [40960]  block: [16x16]
+             device time(us): total=22,128,078 max=1,479 min=1,470 avg=1,475
+            elapsed time(us): total=22,432,876 max=1,648 min=1,487 avg=1,495
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/prepare_edgevars_mod.f90
+  extract_edgevars  NVIDIA  devicenum=0
+    time(us): 41,911,572
+    63: upload reached 16 times
+        63: data copyin transfers: 16
+             device time(us): total=78 max=7 min=4 avg=4
+    63: compute region reached 45000 times
+        63: kernel launched 45000 times
+            grid: [32768]  block: [16x5]
+             device time(us): total=41,911,494 max=938 min=927 avg=931
+            elapsed time(us): total=42,839,784 max=23,592 min=944 avg=951
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/prepare_edgevars_mod.f90
+  communicate_edgevars_work  NVIDIA  devicenum=0
+    time(us): 46,314,725
+    191: compute region reached 45000 times
+        191: kernel launched 45000 times
+            grid: [32768]  block: [16x5]
+             device time(us): total=46,314,725 max=1,034 min=1,025 avg=1,029
+            elapsed time(us): total=47,074,816 max=24,887 min=1,041 avg=1,046
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/prepare_edgevars_mod.f90
+  pack_edgevars  NVIDIA  devicenum=0
+    time(us): 1,500,995
+    249: compute region reached 45000 times
+        249: kernel launched 45000 times
+            grid: [1024]  block: [16]
+             device time(us): total=862,887 max=27 min=18 avg=19
+            elapsed time(us): total=1,624,058 max=424 min=34 avg=36
+    283: compute region reached 45000 times
+        283: kernel launched 45000 times
+            grid: [512]  block: [16]
+             device time(us): total=638,108 max=16 min=14 avg=14
+            elapsed time(us): total=1,362,880 max=427 min=29 avg=30
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/prepare_edgevars_mod.f90
+  unpack_edgevars  NVIDIA  devicenum=0
+    time(us): 1,000,788
+    334: compute region reached 45000 times
+        334: kernel launched 45000 times
+            grid: [1024]  block: [16]
+             device time(us): total=532,894 max=18 min=11 avg=11
+            elapsed time(us): total=1,443,275 max=403 min=30 avg=32
+    368: compute region reached 45000 times
+        368: kernel launched 45000 times
+            grid: [512]  block: [16]
+             device time(us): total=467,894 max=17 min=9 avg=10
+            elapsed time(us): total=1,205,889 max=524 min=25 avg=26
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/main.f90
+  main  NVIDIA  devicenum=0
+    time(us): 331,714
+    119: update directive reached 1 time
+        119: data copyin transfers: 154
+             device time(us): total=170,148 max=1,372 min=4 avg=1,104
+    136: update directive reached 1 time
+        136: data copyin transfers: 15
+             device time(us): total=61 max=5 min=4 avg=4
+    137: update directive reached 1 time
+    205: update directive reached 1 time
+        205: data copyout transfers: 186
+             device time(us): total=161,067 max=1,306 min=5 avg=865
+    222: update directive reached 1 time
+        222: data copyout transfers: 15
+             device time(us): total=83 max=9 min=5 avg=5
+    223: update directive reached 1 time
+        223: data copyout transfers: 8
+             device time(us): total=355 max=59 min=30 avg=44
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/euler_flux3d_mod.f90
+  nh_flux_maker  NVIDIA  devicenum=0
+    time(us): 53,478,097
+    53: compute region reached 45000 times
+        53: kernel launched 45000 times
+            grid: [16384]  block: [16x8]
+             device time(us): total=53,478,097 max=1,197 min=1,179 avg=1,188
+            elapsed time(us): total=54,249,925 max=22,881 min=1,195 avg=1,205
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/euler_flux3d_mod.f90
+  make_euler3d_flux  NVIDIA  devicenum=0
+    time(us): 54,694,529
+    136: compute region reached 45000 times
+        136: kernel launched 45000 times
+            grid: [4096]  block: [16x8]
+             device time(us): total=54,694,529 max=1,227 min=1,207 avg=1,215
+            elapsed time(us): total=55,688,603 max=25,135 min=1,225 avg=1,237
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/euler_flux3d_mod.f90
+  apply_noflux_topbotbc  NVIDIA  devicenum=0
+    time(us): 2,864,114
+    185: compute region reached 45000 times
+        185: kernel launched 45000 times
+            grid: [4096]  block: [16x8]
+             device time(us): total=2,864,114 max=72 min=60 avg=63
+            elapsed time(us): total=3,750,517 max=609 min=76 avg=83
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/euler_flux3d_mod.f90
+  make_ext_normalflux  NVIDIA  devicenum=0
+    time(us): 50,169,866
+    278: compute region reached 45000 times
+        278: kernel launched 45000 times
+            grid: [2048]  block: [16x16]
+             device time(us): total=50,169,866 max=1,189 min=1,102 avg=1,114
+            elapsed time(us): total=51,084,284 max=25,157 min=1,120 avg=1,135
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/euler_flux3d_mod.f90
+  store_hydrostatic_edgevars  NVIDIA  devicenum=0
+    time(us): 487
+    476: compute region reached 1 time
+        476: kernel launched 1 time
+            grid: [8192]  block: [16x4]
+             device time(us): total=487 max=487 min=487 avg=487
+            elapsed time(us): total=505 max=505 min=505 avg=505
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/euler_flux3d_mod.f90
+  recover_state_vars  NVIDIA  devicenum=0
+    time(us): 53,580,786
+    544: compute region reached 45000 times
+        544: kernel launched 45000 times
+            grid: [4096]  block: [32x16]
+             device time(us): total=53,580,786 max=1,227 min=1,181 avg=1,190
+            elapsed time(us): total=54,762,411 max=26,221 min=1,199 avg=1,216
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/dg3d_rhs_mod.f90
+  compute_dgnh_rhs  NVIDIA  devicenum=0
+    time(us): 558,415,286
+    45: compute region reached 45000 times
+        45: kernel launched 45000 times
+            grid: [1280]  block: [16x8]
+             device time(us): total=558,415,286 max=14,317 min=12,317 avg=12,409
+            elapsed time(us): total=559,666,717 max=32,009 min=12,341 avg=12,437
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/dg3d_rhs_mod.f90
+  compute_maxfluxjacobian  NVIDIA  devicenum=0
+    time(us): 101,556,455
+    89: compute region reached 45000 times
+        89: kernel launched 45000 times
+            grid: [256]  block: [16x8]
+             device time(us): total=101,556,455 max=2,280 min=2,236 avg=2,256
+            elapsed time(us): total=102,318,303 max=14,461 min=2,252 avg=2,273
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/dg3d_rhs_mod.f90
+  lxf_nh3d_flux  NVIDIA  devicenum=0
+    time(us): 116,922,627
+    147: compute region reached 45000 times
+        147: kernel launched 45000 times
+            grid: [65535]  block: [16x8]
+             device time(us): total=116,525,560 max=2,594 min=2,575 avg=2,589
+            elapsed time(us): total=117,740,576 max=22,612 min=2,595 avg=2,616
+    147: data region reached 90000 times
+        147: data copyin transfers: 45000
+             device time(us): total=397,067 max=22 min=3 avg=8
+/home/pkommera/3d-DG/final_nh3d_gpuarrayBaseCode1/dg3d_rhs_mod.f90
+  flux_divergence  NVIDIA  devicenum=0
+    time(us): 90,786,539
+    185: compute region reached 45000 times
+        185: kernel launched 45000 times
+            grid: [65535]  block: [16x8]
+             device time(us): total=90,786,539 max=2,219 min=2,013 avg=2,017
+            elapsed time(us): total=91,736,292 max=24,903 min=2,031 avg=2,038

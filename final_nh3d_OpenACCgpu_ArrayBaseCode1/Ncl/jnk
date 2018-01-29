@@ -1,0 +1,13 @@
+ Min/Max u   -3.3691000926648078        3.3691000926647998     
+  Min/Max w   -3.7309277435080324        7.5976442408722225     
+  High_resoln post-process grid dim:          136         136
+ Post-Processed Field in: ./Ncl/pt_hr.dat
+   Min & Max Val:   -2.9217472859092111E-002   1.8758914347164506     
+   ~~~~~~~~~~~~~~ 
+ Post-Processed Field in: ./Ncl/uu_hr.dat
+   Min & Max Val:   -3.4019488190203400        3.4019488190203320     
+   ~~~~~~~~~~~~~~ 
+ Post-Processed Field in: ./Ncl/ww_hr.dat
+   Min & Max Val:   -3.5899798951118465        7.6852024113332718     
+   ~~~~~~~~~~~~~~ 
+

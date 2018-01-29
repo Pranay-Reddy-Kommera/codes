@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# LSF batch script to run an MPI application
+#
+#BSUB -P NTDD0002           # project code
+#BSUB -W 06:00               # wall-clock time (hrs:mins)
+#BSUB -n 1                 # number of tasks in job         
+#BSUB -R "span[ptile=1]"    # run 16 MPI tasks per node
+#BSUB -J main                # job name
+#BSUB -o ./out/main.%J.out   # output file name in which %J is replaced by the job ID
+#BSUB -e ./err/main.%J.err   # error file name in which %J is replaced by the job ID
+#BSUB -q gpgpu               # queue
+##BSUB -q caldera               # queue
+
+#module swap intel intel/17.0.1
+module swap intel pgi/16.5
+module list
+
+#run the executable
+mpirun.lsf ./main

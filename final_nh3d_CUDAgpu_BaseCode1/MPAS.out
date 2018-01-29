@@ -1,0 +1,649 @@
++ source /cm/extra/apps/Modules/3.2.10/init/bash
+++ export -f module
+++ MODULESHOME=/cm/extra/apps/Modules/3.2.10
+++ export MODULESHOME
+++ '[' slurm/16.05.0:null:PrgEnv/PGI+OpenMPI/2017-02-10:cuda/8.0.44:pgi/17.1:hwloc/1.11.5:openmpi/1.10.5 = '' ']'
+++ '[' /cm/extra/PrgEnv/PGI+OpenMPI/2017-02-10:/cm/extra/apps/Modules/3.2.10/Modules/modulefiles:/cm/extra/eb/modules:/cm/extra/ModuleFiles/Latest:/cm/extra/ModuleFiles/Legacy:/cm/extra/Bundles:/cm/extra/PrgEnv/EZBuild/foss-2016a:/cm/extra/PrgEnv/EZBuild/foss-2016b:/cm/extra/PrgEnv/GCC+MPICH/2016-07-22:/cm/extra/PrgEnv/GCC+MVAPICH2/2016-10-26:/cm/extra/PrgEnv/GCC+OpenMPI/2016-04-16:/cm/extra/PrgEnv/GCC+OpenMPI/2016-06-24:/cm/extra/PrgEnv/GCC+OpenMPI/2016-09-01:/cm/extra/PrgEnv/GCC+OpenMPI/2016-10-12:/cm/extra/PrgEnv/GCC+OpenMPI/2016-12-08:/cm/extra/PrgEnv/GCC+OpenMPI/2017-03-20:/cm/extra/PrgEnv/Intel+IntelMPI/2017-03-02:/cm/extra/PrgEnv/Intel+MVAPICH2/2016-04-19:/cm/extra/PrgEnv/Intel+MVAPICH2/2016-10-26:/cm/extra/PrgEnv/Intel+OpenMPI/2016-03-21:/cm/extra/PrgEnv/Intel+OpenMPI/2016-08-03:/cm/extra/PrgEnv/Intel+OpenMPI/2017-02-16:/cm/extra/PrgEnv/PGI+MVAPICH2/2016-05-27:/cm/extra/PrgEnv/PGI+MVAPICH2/2017-07-27:/cm/extra/PrgEnv/PGI+OpenMPI/2016-11-14:/cm/extra/PrgEnv/PGI+OpenMPI/2017-03-18:/cm/extra/PrgEnv/PGI+OpenMPI/2017-04-26:/cm/extra/PrgEnv/PGI+OpenMPI/2017-05-24:/cm/extra/PrgEnv/PGI+OpenMPI/2017-06-07:/cm/extra/PrgEnv/XL+OpenMPI/2017-07-26 = '' ']'
+++ '[' 4 -ge 3 ']'
+++ '[' -r /cm/extra/apps/Modules/3.2.10/init/bash_completion ']'
+++ . /cm/extra/apps/Modules/3.2.10/init/bash_completion
++++ complete -o default -F _module module
++ module load null
+++ /cm/extra/apps/Modules/3.2.10/bin/modulecmd bash load null
++ eval
++ module load PrgEnv/PGI+OpenMPI/2017-05-24
+++ /cm/extra/apps/Modules/3.2.10/bin/modulecmd bash load PrgEnv/PGI+OpenMPI/2017-05-24
+PrgEnv/PGI+OpenMPI/2017-05-24(10):ERROR:150: Module 'PrgEnv/PGI+OpenMPI/2017-05-24' conflicts with the currently loaded module(s) 'PrgEnv/PGI+OpenMPI/2017-02-10'
+PrgEnv/PGI+OpenMPI/2017-05-24(10):ERROR:102: Tcl command execution failed: conflict PrgEnv
+
++ eval
++ module load openmpi
+++ /cm/extra/apps/Modules/3.2.10/bin/modulecmd bash load openmpi
++ eval LM_LICENSE_FILE=1787@sc-lic-25.nvidia.com:1787@sac-lic-26.nvidia.com ';export' 'LM_LICENSE_FILE;'
+++ LM_LICENSE_FILE=1787@sc-lic-25.nvidia.com:1787@sac-lic-26.nvidia.com
+++ export LM_LICENSE_FILE
++ export PGI_ACC_TIME=1
++ PGI_ACC_TIME=1
++ export PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/bin:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/bin:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/bin:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/bin:/cm/local/apps/cuda/libs/current/healthmon:/cm/local/apps/cuda/libs/current/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/bin:/cm/shared/apps/slurm/16.05.0/sbin:/cm/shared/apps/slurm/16.05.0/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/sbin:/usr/sbin:/cm/extra/apps/Modules/3.2.10/bin:/home/pkommera/bin
++ PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/bin:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/bin:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/bin:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/bin:/cm/extra/apps/PGI/17.1/linux86-64/17.1/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/bin:/cm/local/apps/cuda/libs/current/healthmon:/cm/local/apps/cuda/libs/current/bin:/cm/extra/apps/cuda80/toolkit/8.0.44/bin:/cm/shared/apps/slurm/16.05.0/sbin:/cm/shared/apps/slurm/16.05.0/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/sbin:/usr/sbin:/cm/extra/apps/Modules/3.2.10/bin:/home/pkommera/bin
++ export LD_LIBRARY_PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/lib:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/lib:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/lib:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/lib:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/extras/CUPTI/lib64:/cm/local/apps/cuda/libs/current/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64:/cm/shared/apps/slurm/16.05.0/lib64/slurm:/cm/shared/apps/slurm/16.05.0/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64/stubs
++ LD_LIBRARY_PATH=/cm/extra/apps/PGI/17.5/linux86-64/17.5/lib:/cm/extra/apps/PGI/17.5/linux86-64/2017/mpi/openmpi-1.10.2/lib:/cm/extra/apps/OpenMPI/1.10.5/PGI-17.1_CUDA-8.0_HWLoc-1.11.5/lib:/cm/extra/apps/HWLoc/1.11.5/PGI-17.1_CUDA-8.0/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/jre/lib:/cm/extra/apps/PGI/17.1/linux86-64/17.1/lib:/cm/extra/apps/cuda80/toolkit/8.0.44/nvvm/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/extras/CUPTI/lib64:/cm/local/apps/cuda/libs/current/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64:/cm/shared/apps/slurm/16.05.0/lib64/slurm:/cm/shared/apps/slurm/16.05.0/lib64:/cm/extra/apps/cuda80/toolkit/8.0.44/lib64/stubs
++ ulimit -c unlimited
++ ulimit -s unlimited
++ mpirun -n 1 ./main
+==> initialized MPI with number of procs = 1
+  HOMAM_Cart: Vital Statistics ------------------------- 
+      Fully 3D Euler DG (nodal) Solver
+  Name of the Test               : nh_igw              
+  Degree of the poly in DG-Space :             3
+  Number of Elements in (x,y,z)  :            64           64           16
+  Element width del(x,y,z) in (m):          5000         2500          625
+  Grid Aspect Ratio, (dx,dy)/dz  :             8            4
+  Global min grid-spacing in  (m):     208.0000000000000     
+  Time step in seconds         :   0.1000
+  -------------------------------------------------- 
+ Iteration,  Time:          300    30.00000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 300    simulation time = 30.00
+ Iteration,  Time:          600    60.00000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 600    simulation time = 60.00
+ Iteration,  Time:          900    90.00000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 900    simulation time = 90.00
+ Iteration,  Time:         1200    120.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 1200    simulation time = 120.00
+ Iteration,  Time:         1500    150.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 1500    simulation time = 150.00
+ Iteration,  Time:         1800    180.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 1800    simulation time = 180.00
+ Iteration,  Time:         2100    210.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 2100    simulation time = 210.00
+ Iteration,  Time:         2400    240.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 2400    simulation time = 240.00
+ Iteration,  Time:         2700    270.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 2700    simulation time = 270.00
+ Iteration,  Time:         3000    300.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3000    simulation time = 300.00
+ Iteration,  Time:         3300    330.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3300    simulation time = 330.00
+ Iteration,  Time:         3600    360.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3600    simulation time = 360.00
+ Iteration,  Time:         3900    390.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 3900    simulation time = 390.00
+ Iteration,  Time:         4200    420.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 4200    simulation time = 420.00
+ Iteration,  Time:         4500    450.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 4500    simulation time = 450.00
+ Iteration,  Time:         4800    480.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 4800    simulation time = 480.00
+ Iteration,  Time:         5100    510.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 5100    simulation time = 510.00
+ Iteration,  Time:         5400    540.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 5400    simulation time = 540.00
+ Iteration,  Time:         5700    570.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 5700    simulation time = 570.00
+ Iteration,  Time:         6000    600.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6000    simulation time = 600.00
+ Iteration,  Time:         6300    630.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6300    simulation time = 630.00
+ Iteration,  Time:         6600    660.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6600    simulation time = 660.00
+ Iteration,  Time:         6900    690.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 6900    simulation time = 690.00
+ Iteration,  Time:         7200    720.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 7200    simulation time = 720.00
+ Iteration,  Time:         7500    750.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 7500    simulation time = 750.00
+ Iteration,  Time:         7800    780.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 7800    simulation time = 780.00
+ Iteration,  Time:         8100    810.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 8100    simulation time = 810.00
+ Iteration,  Time:         8400    840.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 8400    simulation time = 840.00
+ Iteration,  Time:         8700    870.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 8700    simulation time = 870.00
+ Iteration,  Time:         9000    900.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9000    simulation time = 900.00
+ Iteration,  Time:         9300    930.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9300    simulation time = 930.00
+ Iteration,  Time:         9600    960.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9600    simulation time = 960.00
+ Iteration,  Time:         9900    990.0000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 9900    simulation time = 990.00
+ Iteration,  Time:        10200    1020.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 10200    simulation time = 1020.00
+ Iteration,  Time:        10500    1050.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 10500    simulation time = 1050.00
+ Iteration,  Time:        10800    1080.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 10800    simulation time = 1080.00
+ Iteration,  Time:        11100    1110.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 11100    simulation time = 1110.00
+ Iteration,  Time:        11400    1140.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 11400    simulation time = 1140.00
+ Iteration,  Time:        11700    1170.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 11700    simulation time = 1170.00
+ Iteration,  Time:        12000    1200.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12000    simulation time = 1200.00
+ Iteration,  Time:        12300    1230.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12300    simulation time = 1230.00
+ Iteration,  Time:        12600    1260.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12600    simulation time = 1260.00
+ Iteration,  Time:        12900    1290.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 12900    simulation time = 1290.00
+ Iteration,  Time:        13200    1320.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 13200    simulation time = 1320.00
+ Iteration,  Time:        13500    1350.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 13500    simulation time = 1350.00
+ Iteration,  Time:        13800    1380.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 13800    simulation time = 1380.00
+ Iteration,  Time:        14100    1410.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 14100    simulation time = 1410.00
+ Iteration,  Time:        14400    1440.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 14400    simulation time = 1440.00
+ Iteration,  Time:        14700    1470.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 14700    simulation time = 1470.00
+ Iteration,  Time:        15000    1500.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 15000    simulation time = 1500.00
+ Iteration,  Time:        15300    1530.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 15300    simulation time = 1530.00
+ Iteration,  Time:        15600    1560.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 15600    simulation time = 1560.00
+ Iteration,  Time:        15900    1590.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 15900    simulation time = 1590.00
+ Iteration,  Time:        16200    1620.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 16200    simulation time = 1620.00
+ Iteration,  Time:        16500    1650.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 16500    simulation time = 1650.00
+ Iteration,  Time:        16800    1680.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 16800    simulation time = 1680.00
+ Iteration,  Time:        17100    1710.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 17100    simulation time = 1710.00
+ Iteration,  Time:        17400    1740.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 17400    simulation time = 1740.00
+ Iteration,  Time:        17700    1770.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 17700    simulation time = 1770.00
+ Iteration,  Time:        18000    1800.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 18000    simulation time = 1800.00
+ Iteration,  Time:        18300    1830.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 18300    simulation time = 1830.00
+ Iteration,  Time:        18600    1860.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 18600    simulation time = 1860.00
+ Iteration,  Time:        18900    1890.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 18900    simulation time = 1890.00
+ Iteration,  Time:        19200    1920.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 19200    simulation time = 1920.00
+ Iteration,  Time:        19500    1950.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 19500    simulation time = 1950.00
+ Iteration,  Time:        19800    1980.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 19800    simulation time = 1980.00
+ Iteration,  Time:        20100    2010.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 20100    simulation time = 2010.00
+ Iteration,  Time:        20400    2040.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 20400    simulation time = 2040.00
+ Iteration,  Time:        20700    2070.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 20700    simulation time = 2070.00
+ Iteration,  Time:        21000    2100.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 21000    simulation time = 2100.00
+ Iteration,  Time:        21300    2130.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 21300    simulation time = 2130.00
+ Iteration,  Time:        21600    2160.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 21600    simulation time = 2160.00
+ Iteration,  Time:        21900    2190.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 21900    simulation time = 2190.00
+ Iteration,  Time:        22200    2220.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 22200    simulation time = 2220.00
+ Iteration,  Time:        22500    2250.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 22500    simulation time = 2250.00
+ Iteration,  Time:        22800    2280.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 22800    simulation time = 2280.00
+ Iteration,  Time:        23100    2310.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 23100    simulation time = 2310.00
+ Iteration,  Time:        23400    2340.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 23400    simulation time = 2340.00
+ Iteration,  Time:        23700    2370.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 23700    simulation time = 2370.00
+ Iteration,  Time:        24000    2400.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 24000    simulation time = 2400.00
+ Iteration,  Time:        24300    2430.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 24300    simulation time = 2430.00
+ Iteration,  Time:        24600    2460.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 24600    simulation time = 2460.00
+ Iteration,  Time:        24900    2490.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 24900    simulation time = 2490.00
+ Iteration,  Time:        25200    2520.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 25200    simulation time = 2520.00
+ Iteration,  Time:        25500    2550.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 25500    simulation time = 2550.00
+ Iteration,  Time:        25800    2580.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 25800    simulation time = 2580.00
+ Iteration,  Time:        26100    2610.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 26100    simulation time = 2610.00
+ Iteration,  Time:        26400    2640.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 26400    simulation time = 2640.00
+ Iteration,  Time:        26700    2670.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 26700    simulation time = 2670.00
+ Iteration,  Time:        27000    2700.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 27000    simulation time = 2700.00
+ Iteration,  Time:        27300    2730.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 27300    simulation time = 2730.00
+ Iteration,  Time:        27600    2760.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 27600    simulation time = 2760.00
+ Iteration,  Time:        27900    2790.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 27900    simulation time = 2790.00
+ Iteration,  Time:        28200    2820.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 28200    simulation time = 2820.00
+ Iteration,  Time:        28500    2850.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 28500    simulation time = 2850.00
+ Iteration,  Time:        28800    2880.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 28800    simulation time = 2880.00
+ Iteration,  Time:        29100    2910.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 29100    simulation time = 2910.00
+ Iteration,  Time:        29400    2940.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 29400    simulation time = 2940.00
+ Iteration,  Time:        29700    2970.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 29700    simulation time = 2970.00
+ Iteration,  Time:        30000    3000.000000000000     
+ Global u min/max:    20.00000000000000         20.00000000000000     
+ Global v min/max:    0.000000000000000         0.000000000000000     
+ Global w min/max:    0.000000000000000         0.000000000000000     
+         
+    step = 30000    simulation time = 3000.00
+==> CPU time (in evolution loop) = 1213.2 sec
+ Global data min/max  -5.4147860453781504E-003   0.1000000000000000     
+ state_vec(2): rho*u error
+    14.81045812205125         15.42064576602140         23.22880371660900      
+  -3.8567311351613252E-002   0.7869320192372169         23.22889943040513     

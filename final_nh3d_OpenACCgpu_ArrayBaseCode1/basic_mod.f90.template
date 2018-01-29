@@ -1,0 +1,71 @@
+!-------------------------------------------------------------------
+! R.D. Nair IMAGe/NCAR 2010
+! Changes 06/2016 by Francois Hebert, SIParCS/Cornell
+!
+! global constants and simulation parameters
+!-------------------------------------------------------------------
+
+module basic_mod
+  implicit none
+
+  ! all defns in this module are meant to be globally accessible
+  public
+
+  ! ----------------------------------------------------------------
+  ! define global constants
+
+  integer, parameter :: real_kind = kind(0.0D0)
+  real(kind=real_kind), parameter :: pi = 2*acos(0.0D0)
+  real(kind=real_kind), parameter :: twopi = 2*pi
+
+  integer, parameter :: testcase_id_uniform_flow = 1001
+  integer, parameter :: testcase_id_solid_body_rotation = 1002
+  integer, parameter :: testcase_id_sinusoidal_flow = 1003
+  integer, parameter :: testcase_id_deformational_flow = 1004
+  integer, parameter :: testcase_id_mountain_agnesi = 1005
+  integer, parameter :: testcase_id_mountain_schar = 1006
+
+
+  ! ----------------------------------------------------------------
+  ! control parameters for the simulation -- to be set by user
+
+  integer, parameter :: testcase = __TESTCASE__
+  logical, parameter :: use_dim_split_scheme = __DIM_SPLIT__
+  logical, parameter :: use_noflux_bc_top_bottom = __NOFLUX_BC__
+
+  ! resolution parameters
+  !   nex/y/z is the number of elements in x/y/z
+  !   nod is the degree of the polynomial
+  integer, parameter :: nex = __NEX__
+  integer, parameter :: ney = __NEY__
+  integer, parameter :: nez = __NEZ__
+  integer, parameter :: nod = __NOD__
+  real(kind=real_kind), parameter :: dt = __DT__
+
+  ! data output parameters
+  integer, parameter :: master_rank = 0 ! this rank will do I/O
+  character(len=*), parameter :: output_dir = "data"
+  logical, parameter :: output_full_volume_data = .false.
+  logical, parameter :: save_movie_frames = __SAVE_MOVIE__
+  integer, parameter :: movie_frame_freq = __FRAME_FREQ__
+
+
+  ! ----------------------------------------------------------------
+  ! other parameters
+
+  ! spatial and temporal domain of the simulation
+  ! these are set within each testcase as appropriate
+  real(kind=real_kind) :: endtime
+  real(kind=real_kind) :: xmin, xmax, ymin, ymax, zmin, zmax
+
+  ! size of each element, set in grid setup
+  real(kind=real_kind) :: delx, dely, delz
+
+  ! useful reparametrizations of nx, nex/y/z
+  ! nx is the number of GLL points in each direction
+  integer, parameter :: nx = nod+1
+  ! nux/y/z is the number of UNIQUE x/y/z collocation points (GLL points overlap!)
+  ! (this corresponds to 'nt+1' in Ram's 2D advection code)
+  integer, parameter :: nux = nod*nex+1, nuy = nod*ney+1, nuz = nod*nez+1
+
+end module basic_mod
